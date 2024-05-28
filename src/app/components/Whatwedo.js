@@ -31,7 +31,7 @@ function WhatWeDo() {
           </div>
           <h2 className='mt-5 text-2xl'>24/7 Emergency Plumbing Services</h2>
           <p className='mt-5 text-sm'>
-            We offer 24/7 emergency plumbing services to ensure that you're covered in case of any plumbing emergencies.
+            We offer 24/7 emergency plumbing services to ensure that you are covered in case of any plumbing emergencies.
           </p>
           <button className="px-8 py-4 rounded-full bg-transparent text-black flex items-center mt-4">
             Contact <IoIosArrowForward className="ml-2" />

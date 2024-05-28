@@ -14,7 +14,7 @@ function About() {
         </p>
         <h2 className='text-2xl sm:text-3xl mt-6'>Our Mission</h2>
         <p className='mt-4'>
-          Our mission is to deliver exceptional plumbing services that exceed our customers' expectations. We strive to be the
+          Our mission is to deliver exceptional plumbing services that exceed our customers expectations. We strive to be the
           trusted plumbing partner for our community by providing honest, professional, and affordable services.
         </p>
         <h2 className='text-2xl sm:text-3xl mt-6'>Our Values</h2>

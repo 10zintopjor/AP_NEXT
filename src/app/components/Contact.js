@@ -49,7 +49,7 @@ function Contact() {
       {/* Contact Information */}
       <div className='w-full sm:w-3/4 mx-auto flex flex-col justify-center m-10 p-4'>
         <h1 className='text-3xl sm:text-5xl text-left font-semibold'>Contact Information</h1>
-        <h3 className='text-base sm:text-xl text-left mt-4'> We're here to help with all your plumbing needs.</h3>
+        <h3 className='text-base sm:text-xl text-left mt-4'> We are here to help with all your plumbing needs.</h3>
         <div className='grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8'>
           <div className='flex flex-col bg-white rounded-lg p-4'>
             <div className='mb-2 sm:mb-4 text-xl sm:text-3xl'><MdEmail /></div>
