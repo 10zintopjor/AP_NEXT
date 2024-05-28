@@ -1,5 +1,6 @@
 // pages/services/commercial.js
 import React from 'react';
+import SchedulService from '../components/SchedulService';
 
 function CommercialServices() {
   return (
@@ -18,6 +19,7 @@ function CommercialServices() {
           <li>Restroom and Facility Plumbing</li>
         </ul>
       </div>
+      <SchedulService />
     </>
   );
 }

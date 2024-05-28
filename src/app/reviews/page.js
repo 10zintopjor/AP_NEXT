@@ -1,5 +1,6 @@
 // pages/reviews.js
 import React from 'react';
+import SchedulService from '../components/SchedulService';
 
 function Reviews() {
   return (
@@ -26,6 +27,7 @@ function Reviews() {
           {/* Add more reviews as needed */}
         </div>
       </div>
+      <SchedulService />
     </>
   );
 }

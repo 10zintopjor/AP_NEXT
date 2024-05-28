@@ -1,5 +1,7 @@
 // pages/about.js
 import React from 'react';
+import SchedulService from '../components/SchedulService';
+
 
 function About() {
   return (
@@ -39,6 +41,7 @@ function About() {
           <strong>Address:</strong> 123 Main St, Toronto, ON M1M 1M1
         </p>
       </div>
+      <SchedulService />
     </>
   );
 }
