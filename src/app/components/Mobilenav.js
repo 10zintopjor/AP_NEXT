@@ -22,14 +22,14 @@ const Mobilenav = () => {
         <div className='flex flex-col'>
           <div className="flex flex-col w-full max-w-5xl mx-auto justify-between items-center ">
             {/* Logo */}
-            <div className="p-4"> {/* Added md:pl-4 for desktop padding */}
+            <div className="p-1"> {/* Added md:pl-4 for desktop padding */}
             <Link href="/">
             <Image src={logo} alt="logo" className="h-24 p-3 md:cursor-pointer" />
             
             </Link>
             </div>
 
-            <div className='flex justify-between items-center w-full'>
+            <div className='flex justify-between items-center w-full mt-0'>
               {/* Hamburger Menu for Mobile */}
               <div>
                 <div className="w-full h-10 bg-customBlue text-white items-center"> {/* Increase z-index */}
@@ -41,14 +41,16 @@ const Mobilenav = () => {
                 </div>
               </div>
               {/* Contact Information */}
-              <div className="px-4 py-2 mb-3 mr-3 flex flex-col md:items-start gap-2 text-l items-center">
-                <div className="bg-red-700 text-white p-2 rounded flex flex-row items-center gap-2">
-                  <a href="tel:4135557777">
+              <div className="px-4 mb-1 mr-1 flex flex-col md:items-start gap-2 text-l items-center">
+                
+              <a href="tel:4135557777">
+                <div className="bg-red-700 text-white p-2 rounded flex items-center gap-2">
                   <IoCallOutline />
-                  <p className='font-bold font-sans'>437-662-7338</p>
-                  </a>
+                  <p className='font-bold font-sans'>417-262-1238</p>
                   
                 </div>
+                </a>
+
               </div>
             </div>
           </div>
