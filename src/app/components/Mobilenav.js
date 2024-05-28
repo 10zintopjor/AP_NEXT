@@ -43,8 +43,11 @@ const Mobilenav = () => {
               {/* Contact Information */}
               <div className="px-4 py-2 mb-3 mr-3 flex flex-col md:items-start gap-2 text-l items-center">
                 <div className="bg-red-700 text-white p-2 rounded flex flex-row items-center gap-2">
+                  <a href="tel:4135557777">
                   <IoCallOutline />
                   <p className='font-bold font-sans'>437-662-7338</p>
+                  </a>
+                  
                 </div>
               </div>
             </div>
