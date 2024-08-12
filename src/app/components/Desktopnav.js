@@ -28,7 +28,7 @@ const Desktopnav = () => {
             {/* Adjusted the button class */}
             <button className="bg-red-500 text-white py-1 px-4 flex flex-row items-center gap-2 rounded hover:bg-white hover:text-red-700">
               <IoCallOutline />
-              <p className="font-sans">437-662-7338</p>
+              <p className="font-sans">647-765-7484</p>
             </button>
             <button className="bg-transparent text-white px-2 py-1 rounded border border-white hover:bg-white hover:text-customBlue">
               <p>Book Your Appointment</p>
