@@ -61,7 +61,7 @@ function Contact() {
             <div className='mb-2 sm:mb-4 text-xl sm:text-3xl'><FaPhoneAlt /></div>
             <h3 className='text-base sm:text-lg'>Phone</h3>
             <h3 className='text-base sm:text-lg'>Call us now for assistance.</h3>
-            <span>123-456-7890</span>
+            <span>647-765-7484</span>
           </div>
           <div className='flex flex-col bg-white rounded-lg p-4'>
             <div className='mb-2 sm:mb-4 text-xl sm:text-3xl'><FaLocationDot /></div>

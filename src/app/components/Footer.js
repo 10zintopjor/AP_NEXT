@@ -21,7 +21,7 @@ function Footer() {
             </div>
             <div className='p-4 text-center md:text-left'>
               <h3>Contact</h3>
-              <h3>437-662-7338</h3>
+              <h3>647-765-7484</h3>
               <span>ariaplumbingca@gmail.com</span>
             </div>
           </div>
