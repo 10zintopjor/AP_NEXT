@@ -1,4 +1,4 @@
-# Use a different Node.js image if the alpine variant is problematic
+# Use a specific Node.js version
 FROM node:18
 
 # Set the working directory
@@ -11,7 +11,7 @@ RUN npm install
 # Copy the rest of the application code
 COPY . .
 
-# Build the application (optional, if applicable)
+# Build the application
 RUN npm run build
 
 # Expose the port the app runs on
