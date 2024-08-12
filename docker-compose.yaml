@@ -1,12 +1,22 @@
 version: '3.8'
 
 services:
-  app:
+  nextjs:
     build:
       context: .
     image: my-nextjs-app
     ports:
       - "3000:3000"
+    networks:
+      - webnet
+
+  apache:
+    image: httpd:alpine
+    container_name: apache
+    ports:
+      - "80:80"
+    volumes:
+      - ./apache.conf:/usr/local/apache2/conf/httpd.conf
     networks:
       - webnet
 
