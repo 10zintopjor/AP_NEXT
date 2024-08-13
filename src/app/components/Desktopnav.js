@@ -23,10 +23,10 @@ const Desktopnav = () => {
         </div>
 
         {/* Contact Information */}
-        <div className="flex flex-col gap-4 mt-4 md:ml-auto">
+        <div className="flex flex-col gap-6 mt-4 md:ml-auto">
           <div className="flex flex-row gap-4 justify-end">
             {/* Adjusted the button class */}
-            <button className="bg-red-500 text-white py-1 px-4 flex flex-row items-center gap-2 rounded hover:bg-white hover:text-red-700">
+            <button className="bg-red-800 text-white py-1 px-4 flex flex-row items-center gap-2 rounded hover:bg-white hover:text-red-700">
               <IoCallOutline />
               <p className="font-sans">647-765-7484</p>
             </button>
@@ -35,7 +35,7 @@ const Desktopnav = () => {
             </button>
           </div>
           <div>
-            <div className="flex flex-row gap-4 justify-center text-white text-lg">
+            <div className="flex flex-row gap-10 justify-start text-white text-lg">
               {links.map((link) => (
                 <div key={link.name} className="relative">
                   <div className="text-left cursor-pointer group">

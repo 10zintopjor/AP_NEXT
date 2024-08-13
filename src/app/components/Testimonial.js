@@ -1,4 +1,3 @@
-// pages/testimonials.js
 import { FaStar } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import Link from 'next/link';
@@ -39,39 +38,39 @@ function Testimonial() {
   const googleReviews = 150; // Number of Google reviews
 
   return (
-    <div className='flex flex-col items-center w-full'>
-      <h1 className='text-5xl font-semibold mt-5 mb-20 text-center'>What Clients Are Saying About Us</h1>
-      <div className='flex flex-col items-center bg-gray-100 border-gray-200'>
-        <div className=' w-3/4 flex rounded justify-center flex-col items'>
-          <div className="text-xl m-2 gap-2 flex flex-row items-center">
-            <FcGoogle className="text-3xl"/> 
-            <p className="text-xs"> Google 4.7</p>
-          </div>
-          <hr></hr>
-          <div className="grid md:grid-cols-2 gap-10 py-4 mb-6">
-            {testimonials.map((testimonial, index) => (
-              <div key={index} className="text-xl flex flex-col">
-                <div className="flex items-center gap-2">
-                  <p className="text-s">4.7</p>
-                  <FaStar />
-                  <FaStar />
-                  <FaStar />
-                  <FaStar />
-                </div>
-                <div className="text-gray-500 text-sm flex items-center my-3">
-                  <div className="rounded-full w-8 h-8 flex items-center justify-center mr-2" style={{ backgroundColor: getRandomColor() }}>
-                    <span className="text-white">{testimonial.name.charAt(0).toUpperCase()}</span>
-                  </div>
-                  <div>{testimonial.name}</div>
-                </div>
-                <div>{testimonial.feedback}</div>
-              </div>
-            ))}
-          </div>
-          <Link href="/reviews" className="text-blue-600 cursor-pointer mt-2 mb-6">
-            View More
-          </Link>
+    <div className='flex flex-col items-center w-full bg-gray-100'>
+      <h1 className="text-3xl sm:text-4xl lg:text-5xl text-customBlue font-bold text-center my-8 lg:my-10">What Clients Are Saying About Us</h1>
+
+      <div className='w-full max-w-4xl bg-white p-4 rounded-lg shadow-md mb-10'>
+        <div className='flex items-center justify-center mb-4'>
+          <FcGoogle className="text-4xl"/> 
+          <p className="text-lg ml-2">Google 4.7</p>
         </div>
+        <hr className="mb-4" />
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          {testimonials.map((testimonial, index) => (
+            <div key={index} className="p-4 bg-gray-50 rounded-lg shadow-sm">
+              <div className="flex items-center gap-2 mb-2">
+                <p className="text-sm">4.7</p>
+                <div className="flex text-yellow-500">
+                  {[...Array(5)].map((_, i) => (
+                    <FaStar key={i} className={i < testimonial.rating ? "text-yellow-500" : "text-gray-300"} />
+                  ))}
+                </div>
+              </div>
+              <div className="flex items-center mb-3">
+                <div className="rounded-full w-10 h-10 flex items-center justify-center mr-3" style={{ backgroundColor: getRandomColor() }}>
+                  <span className="text-white text-lg">{testimonial.name.charAt(0).toUpperCase()}</span>
+                </div>
+                <div className="text-sm font-semibold">{testimonial.name}</div>
+              </div>
+              <p className="text-gray-700 text-sm">{testimonial.feedback}</p>
+            </div>
+          ))}
+        </div>
+        <Link href="/reviews" className="block text-center text-blue-600 mt-6 text-lg">
+          View More
+        </Link>
       </div>
     </div>
   );

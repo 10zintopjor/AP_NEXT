@@ -17,7 +17,7 @@ function Footer() {
             </div>
             <div className='p-4 text-center md:text-left'>
               <h3>Address</h3>
-              <span>Level1, 123 Main St, Toronto, ON</span>
+              <span>517 Browns LineToronto, ON M8W 3V1</span>
             </div>
             <div className='p-4 text-center md:text-left'>
               <h3>Contact</h3>

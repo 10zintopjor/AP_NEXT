@@ -1,49 +1,31 @@
-// pages/about.js
 import React from 'react';
 import SchedulService from '../components/SchedulService';
 
-
-function About() {
+function AboutUs() {
   return (
     <>
-      <div className='w-full md:w-3/4 mx-auto p-6 sm:p-20'>
-        <h1 className='text-3xl sm:text-5xl text-left'>About Us</h1>
-        <h3 className='text-base sm:text-xl text-left mt-4'>Learn more about our company and team.</h3>
-        <p className='mt-4'>
-          At Aria Plumbing, we have been providing top-quality plumbing services in Toronto for over 20 years.
-          Our team of experienced and certified plumbers is dedicated to offering reliable and efficient solutions for both
-          residential and commercial clients.
-        </p>
-        <h2 className='text-2xl sm:text-3xl mt-6'>Our Mission</h2>
-        <p className='mt-4'>
-          Our mission is to deliver exceptional plumbing services that exceed our customers expectations. We strive to be the
-          trusted plumbing partner for our community by providing honest, professional, and affordable services.
-        </p>
-        <h2 className='text-2xl sm:text-3xl mt-6'>Our Values</h2>
-        <ul className='list-disc mt-4 ml-6'>
-          <li>Integrity: We uphold the highest standards of integrity in all our actions.</li>
-          <li>Customer Focus: We value our customers and strive to provide excellent customer service.</li>
-          <li>Quality: We provide outstanding products and unsurpassed service that, together, deliver premium value to our customers.</li>
-          <li>Teamwork: We work together to meet the needs of our customers and help the company win.</li>
-        </ul>
-        <h2 className='text-2xl sm:text-3xl mt-6'>Our Team</h2>
-        <p className='mt-4'>
-          Our team is composed of highly skilled professionals who are passionate about plumbing. We are committed to continuous
-          training and development to stay up-to-date with the latest industry standards and technologies.
-        </p>
-        <h2 className='text-2xl sm:text-3xl mt-6'>Contact Us</h2>
-        <p className='mt-4'>
-          If you have any questions or need plumbing services, feel free to contact us. We are here to help!
-        </p>
-        <p className='mt-4'>
-          <strong>Phone:</strong> 123-456-7890<br />
-          <strong>Email:</strong> contact@yourplumbingcompany.com<br />
-          <strong>Address:</strong> 123 Main St, Toronto, ON M1M 1M1
-        </p>
+      <div className=" bg-gray-100 p-6">
+        <div className="max-w-6xl mx-auto px-4 mt-16 sm:mt-8 mb-36">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl text-customBlue font-bold text-center m-8 lg:m-20">Plumbing Service You Can Trust</h1>
+
+            <p className="text-lg mb-6">
+              Welcome to <strong>Your Family Plumber</strong>. With over 15 years of experience, we offer reliable and efficient plumbing services for your home. Our expert team is ready to handle any plumbing issue, big or small.
+            </p>
+            <h3 className="text-2xl text-center font-semibold mb-8">From The Owner</h3>
+            <p className="text-lg mb-4">
+              At <strong>Your Family Plumber</strong>, we are dedicated to providing top-notch plumbing services. We specialize in backflow prevention, water meter installation, and more, ensuring every job is done right the first time.
+            </p>
+            <p className="text-lg mb-4">
+              Our skilled professionals are committed to going the extra mile. We handle any plumbing challenge with ease and ensure you get the best performance without the usual hassles.
+            </p>
+            <p className="text-lg mb-4">
+              Your satisfaction is our priority. At <strong>Your Family Plumber</strong>, we don’t stop until you’re completely happy with our work.
+            </p>
+          </div>
       </div>
       <SchedulService />
     </>
   );
 }
 
-export default About;
+export default AboutUs;

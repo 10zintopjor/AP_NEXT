@@ -6,12 +6,11 @@ import { GiAutoRepair } from "react-icons/gi";
 
 function WhatWeDo() {
   return (
-    <div className='flex flex-col items-center my-16 justify-center'>
+    <div className='flex flex-col items-center justify-center'>
       {/* First Component */}
       <div className="sm:w-3/4 w-full">
-        <h2 className="text-4xl sm:text-5xl font-semibold text-center">
-          Professional Plumbing Services in Greater Toronto Area
-        </h2>
+      <h1 className="text-3xl sm:text-4xl lg:text-5xl text-customBlue font-bold text-center m-8 lg:m-20">Plumbing Services</h1>
+
       <div className='flex flex-col sm:flex-row mt-10 justify-center gap-10 p-2'>
         <div className='flex flex-col items-center text-center'>
           <div className='text-4xl'>

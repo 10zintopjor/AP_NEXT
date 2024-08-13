@@ -44,7 +44,7 @@ const Mobilenav = () => {
               <div className="px-4 mb-1 mr-1 flex flex-col md:items-start gap-2 text-l items-center">
                 
               <a href="tel:6477657484">
-                <div className="bg-red-700 text-white p-2 rounded flex items-center gap-2">
+                <div className="bg-red-800 text-white p-2 rounded flex items-center gap-2 mb-2">
                   <IoCallOutline />
                   <p className='font-bold font-sans'>647-765-7484</p>
                   
