@@ -45,7 +45,7 @@ function Hero() {
         {/* Hero image */}
         <Image src={hero_img} alt="Hero Image" layout="fill" objectFit="cover" quality={100} />
         {/* Proudly Plumbing section */}
-        <div className="z-10 p-10 lg:p-40 text-center max-w-4xl">
+        <div className="z-10 py-8 lg:p-40 text-center max-w-4xl">
           <h1 className="text-4xl lg:text-6xl font-bold">Your Family Plumber</h1>
           <h3 className="text-xl mt-8">We provide high-quality plumbing services for residential and commercial clients in the Greater Toronto Area</h3>
           {/* Buttons */}

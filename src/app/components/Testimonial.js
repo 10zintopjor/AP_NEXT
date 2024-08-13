@@ -38,7 +38,7 @@ function Testimonial() {
   const googleReviews = 150; // Number of Google reviews
 
   return (
-    <div className='flex flex-col items-center w-full bg-gray-100'>
+    <div className='flex flex-col items-center w-full bg-gray-100 p-3'>
       <h1 className="text-3xl sm:text-4xl lg:text-5xl text-customBlue font-bold text-center my-8 lg:my-10">What Clients Are Saying About Us</h1>
 
       <div className='w-full max-w-4xl bg-white p-4 rounded-lg shadow-md mb-10'>
