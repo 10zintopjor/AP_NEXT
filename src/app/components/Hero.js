@@ -6,6 +6,7 @@ import { IoLocationOutline } from "react-icons/io5";
 import { BsTelephone } from "react-icons/bs";
 import Image from 'next/image'; // Import the Next.js Image component
 import hero_img from "../images/hero_img.jpeg"; // Adjust the path to the image file
+import Contactform from './Contactform';
 
 const VerticalLine = ({ height = '100px', color = 'white', width = '2px', margin = '0 10px' }) => {
   return (
@@ -45,9 +46,9 @@ function Hero() {
         {/* Hero image */}
         <Image src={hero_img} alt="Hero Image" layout="fill" objectFit="cover" quality={100} />
         {/* Proudly Plumbing section */}
-        <div className="z-10 py-8 lg:p-40 text-center max-w-4xl">
+        <div className="z-10 py-8 lg:p-30 text-center max-w-4xl">
           <h1 className="text-4xl lg:text-6xl font-bold">Your Family Plumber</h1>
-          <h3 className="text-xl mt-8">We provide high-quality plumbing services for residential and commercial clients in the Greater Toronto Area</h3>
+          <h3 className="text-xl mt-8 p-3">We provide high-quality plumbing services for residential and commercial clients in the Greater Toronto Area</h3>
           {/* Buttons */}
           <div className="mt-8">
             <button className="bg-transparent text-white text-lg sm:text-2xl py-3 px-6 border border-white rounded-lg mr-4 hover:bg-white hover:text-customBlue transition duration-300">Schedule</button>
@@ -55,17 +56,7 @@ function Hero() {
           </div>
         </div>
         {/* Form section */}
-        <div className={`z-10 p-10 lg:p-10 text-center max-w-3xl bg-gray-900 bg-opacity-50 border border-white rounded ${isMobile ? 'w-5/6 m-4' : 'w-full max-w-96'}`}>
-          <h2 className="text-3xl font-bold text-white mb-4">Contact Us</h2>
-          {/* Form fields */}
-          <form className="flex flex-col space-y-4">
-            <input type="text" placeholder="Your Name" className="text-white rounded-lg py-3 px-4 focus:outline-none" />
-            <input type="tel" placeholder="Phone Number" className="text-white rounded-lg py-3 px-4 focus:outline-none" />
-            <input type="text" placeholder="Location" className="text-white rounded-lg py-3 px-4 focus:outline-none" />
-            <textarea placeholder="Describe your issue..." rows="4" className={`text-white rounded-lg py-3 px-4 focus:outline-none ${isMobile ? 'w-full' : ''}`}></textarea>
-            <button type="submit" className="bg-customBlue border border-white text-white py-3 px-6 rounded-lg hover:bg-white hover:text-customBlue transition duration-300">Submit</button>
-          </form>
-        </div>
+        <Contactform isMobile={isMobile}/>
 
       </div>
 
