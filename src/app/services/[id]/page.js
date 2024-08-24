@@ -29,8 +29,7 @@ export default function FaucetDetails() {
         <div className="flex justify-center mb-6">
           <Image src={faucetService.imageUrl} alt={faucetService.title} width={200} height={200} className="rounded-lg shadow-md" />
         </div>
-        <h2 className="text-2xl font-semibold text-gray-800 mb-4 text-center">Long Description:</h2>
-        <p className="text-gray-600 leading-relaxed text-center">{faucetService.longDescription}</p>
+        <p className="text-gray-600 leading-relaxed text-center mt-10">{faucetService.longDescription}</p>
       </div>
       <SchedulService />
     </>
