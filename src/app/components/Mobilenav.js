@@ -23,7 +23,7 @@ const Mobilenav = () => {
             {/* Logo */}
             <div className="p-1"> {/* Added md:pl-4 for desktop padding */}
             <Link href="/">
-            <Image src='/images/8.png' alt="logo" width={100} height={60} className="h-24 p-3 md:cursor-pointer" />
+            <Image src='/images/8.png' alt="logo" width={300} height={60} className="h-24 p-3 md:cursor-pointer" />
             
             </Link>
             </div>
