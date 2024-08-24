@@ -5,7 +5,6 @@ import Link from 'next/link';
 import { IoCallOutline } from 'react-icons/io5';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
-import logo from '../images/8.png'; // Adjust the path if necessary
 import { links } from './Navlinks';
 
 const Mobilenav = () => {
@@ -24,7 +23,7 @@ const Mobilenav = () => {
             {/* Logo */}
             <div className="p-1"> {/* Added md:pl-4 for desktop padding */}
             <Link href="/">
-            <Image src={logo} alt="logo" className="h-24 p-3 md:cursor-pointer" />
+            <Image src='/images/8.png' alt="logo" width={100} height={60} className="h-24 p-3 md:cursor-pointer" />
             
             </Link>
             </div>

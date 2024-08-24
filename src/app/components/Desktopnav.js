@@ -5,7 +5,6 @@ import { usePathname } from 'next/navigation';
 import { IoCallOutline } from 'react-icons/io5';
 import { links } from './Navlinks';
 import Image from 'next/image';
-import logo from '../images/8.png';
 import Link from 'next/link';
 
 const Desktopnav = () => {
@@ -18,7 +17,7 @@ const Desktopnav = () => {
         {/* Logo */}
         <div className="py-1">
           <Link href="/">
-          <Image src={logo} alt="logo" className="w-auto h-16 cursor-pointer" />
+          <Image src="/images/8.png" alt="logo" width={300} height={60} className="h-16 cursor-pointer" />
           </Link>
         </div>
 

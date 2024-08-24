@@ -2,7 +2,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { FaFacebook, FaInstagram, FaTiktok, FaTwitter } from "react-icons/fa";
 import Businesscard from './Businesscard';
-import logo from '../images/8.png';
 
 function Footer() {
   return (
@@ -13,7 +12,7 @@ function Footer() {
         <div className='grid grid-cols-1 md:grid-cols-3 mx-2'>
           <div className='flex flex-col items-center md:items-start justify-center'>
             <div className="p-4 bg-customBlue">
-              <Image src={logo} alt="logo " width={300} height={200} />
+              <Image src="/images/8.png" alt="logo " width={300} height={200} />
             </div>
             <div className='p-4 text-center md:text-left'>
               <h3>Address</h3>

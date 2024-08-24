@@ -5,7 +5,6 @@ import { useState, useEffect } from 'react';
 import { IoLocationOutline } from "react-icons/io5";
 import { BsTelephone } from "react-icons/bs";
 import Image from 'next/image'; // Import the Next.js Image component
-import hero_img from "../images/hero_img.jpeg"; // Adjust the path to the image file
 import Contactform from './Contactform';
 
 const VerticalLine = ({ height = '100px', color = 'white', width = '2px', margin = '0 10px' }) => {
@@ -44,7 +43,7 @@ function Hero() {
         {/* Dark overlay */}
         <div className="absolute inset-0 bg-black opacity-50"></div>
         {/* Hero image */}
-        <Image src={hero_img} alt="Hero Image" layout="fill" objectFit="cover" quality={100} />
+        <Image src="/images/hero_img.jpeg" alt="Hero Image" layout="fill" objectFit="cover" quality={100} />
         {/* Proudly Plumbing section */}
         <div className="z-10 py-8 lg:p-30 text-center max-w-4xl">
           <h1 className="text-4xl lg:text-6xl font-bold">Your Family Plumber</h1>
